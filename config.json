@@ -1,0 +1,72 @@
+{
+	"name": "Codebook Concertina",
+
+	"description": "On the Codebook page, expand and collapse the table rows for the fields of each instrument.",
+
+	"namespace": "MCRI\\CodebookConcertina",
+
+	"authors": [
+		{
+			"name": "Luke Stevens",
+			"email": "luke.stevens@mcri.edu.au",
+			"institution": "Murdoch Children's Research Institute"
+		}
+	],
+
+	"permissions": [
+                "redcap_every_page_top"
+	],
+
+        "enable-every-page-hooks-on-system-pages": false,
+
+        "links": {
+        },
+        
+        "no-auth-pages": [
+        ],
+
+	"system-settings": [
+        ],
+
+	"project-settings": [
+                {
+			"key": "default-visibility",
+			"name": "Default visibility of codebook variable rows",
+			"required": true,
+			"type": "radio",
+                        "choices": [
+				{ "value": "0", "name": "Collapsed" },
+				{ "value": "1", "name": "Expanded" }
+                        ],
+			"default": "1"
+		},
+                {
+                         "key": "button-text-show",
+                         "name": "Button text 'Expand instrument'",
+                         "required": true,
+                         "type": "text",
+                         "default": "Expand"
+                },
+                {
+                         "key": "button-text-show-all",
+                         "name": "Button text 'Expand all'",
+                         "required": true,
+                         "type": "text",
+                         "default": "Expand all instruments"
+                },
+                {
+                         "key": "button-text-hide",
+                         "name": "Button text 'Collapse instrument'",
+                         "required": true,
+                         "type": "text",
+                         "default": "Collapse"
+                },
+                {
+                         "key": "button-text-hide-all",
+                         "name": "Button text 'Collapse all'",
+                         "required": true,
+                         "type": "text",
+                         "default": "Collapse all instruments"
+                }
+        ]
+}
