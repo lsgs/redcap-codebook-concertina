@@ -17,6 +17,10 @@ class CodebookConcertina extends AbstractExternalModule
         const DEFAULT_TEXT_HIDE_ALL = 'Collapse all instruments';
         const DEFAULT_VISIBILITY = '1';
         
+        public function __construct() {
+                parent::__construct();
+        }
+        
         public function redcap_every_page_top($project_id) {
                 if (isset($project_id) && intval($project_id)>0 && PAGE==='Design/data_dictionary_codebook.php') {
                         $btnTextShow = $this->getShowButtonText();
