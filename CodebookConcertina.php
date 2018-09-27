@@ -19,6 +19,7 @@ class CodebookConcertina extends AbstractExternalModule
         
         public function __construct() {
                 parent::__construct();
+                $this->disableUserBasedSettingPermissions();
         }
         
         public function redcap_every_page_top($project_id) {
